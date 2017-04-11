@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/homepage.css"/>
+		<link rel="stylesheet" type="text/css" href="../svg/font.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/help.css"/>
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/public.js"></script>
+	</head>
+	<body>
+		<!--左栏导航-->
+		<div class="centerLeft">
+			<div class="logo">
+				<img src="../img/LOGO.png"/>
+			</div>
+			<ul>
+				<li>
+					<a href="homepage.html">首页</a>
+				</li>
+				<li>
+					<a href="Jindex.html">员工信息管理</a>
+				</li>
+				<li>
+					<a href="Personnel.html">人事变动</a>
+				</li>
+				<li>
+					<a href="recycle.html">回收站</a>
+				</li>
+				<li style="background: #5093E1;">
+					<a href="help.html">帮助</a>
+				</li>
+			</ul>
+		</div>
+		<!--右栏-->
+		<div class="centerRight">
+			<!--右栏 头部-->
+			<div class="logo">
+				<div class="weather">
+					<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5"></iframe> 
+				</div>
+				<div class="search_cen">
+					<!-- <input type="search" name="search" id="search" value=""/><label for="search" class="icon-search"></label> -->
+					<marquee scrolltop="0" onmouseover="this.stop()" onmouseout="this.start()">
+						<span>公告</span>
+						<a href="http://news.sina.com.cn/society">最近新闻动态</a>
+					</marquee>
+				</div>
+				
+				<div class="Administrator">
+					<div class="header_p" id="header_p">
+						<img src="../img/d4.jpg"/>
+					</div>
+					
+					<div class="menu_control">
+						<!--icon-circle-down-->
+						<p class="menu">管理员<img src="../img/up.png" id="alter"/></p>
+						<ul class="submenu">
+							
+							<li><i class="icon-user-plus"></i><span>管理员信息</span></li>
+							<li id="switchover"><i class="icon-tab"></i><span>切换用户</span></li>
+							<li id="quit"><i class="icon-switch"></i><span>退出</span></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="right_add">+</div>
+			</div>
+			<div class="right_main" style="overflow: hidden;">
+				 <!--<div class="wrapper">
+				    <div class="border-circle" id="one"></div>
+				    <div class="border-circle" id="two"></div>
+				    <div class="background-circle">
+				      <div class="triangle-light"></div>
+				      <div class="body"></div>
+				      <span class="shirt-text">I</span>
+				      <span class="shirt-text">♥</span>
+				      <span class="shirt-text">C</span>
+				      <span class="shirt-text">S</span>
+				      <span class="shirt-text">S</span>
+				      <div class="triangle-dark"></div>
+				    </div>
+				    <div class="head">
+				      <div class="ear" id="left"></div>
+				      <div class="ear" id="right"></div>
+				      <div class="hair-main">
+				        <div class="sideburn" id="left"></div>
+				        <div class="sideburn" id="right"></div>
+				        <div class="hair-top"></div>
+				      </div>
+				      <div class="face">
+				        <div class="hair-bottom"></div>
+				        <div class="nose"></div>
+				        <div class="eye-shadow" id="left">
+				          <div class="eyebrow"></div>
+				          <div class="eye"></div>
+				        </div>
+				        <div class="eye-shadow" id="right">
+				          <div class="eyebrow"></div>
+				          <div class="eye"></div>
+				        </div>
+				        <div class="mouth"></div>
+				        <div class="shadow-wrapper">
+				          <div class="shadow"></div>
+				        </div>
+				      </div>
+				    </div>
+				    <span class="music-note" id="one">&#9835;</span>
+				    <span class="music-note" id="two">&#9834;</span>
+				  </div>
+			</div>-->
+			<div class="page_error" style="width: 60%;height: 60%;margin: 10% auto;">
+				<img src="../img/page404.jpg" width="100%" height="100%"/>
+			</div>
+		</div>
+		<!--点击头像更改管理员信息框-->
+		<div class="header_z">
+			<asid class="login">
+				<div>
+					<i id="loginClose" class="icon-cross"></i>
+				</div>
+				<form>
+					<lable>账号<input type="text" /></lable>
+					<lable>密码<input type="password" /></lable>
+					<!--<p>
+						<label><input type="checkbox" />自动登陆</label>
+						<a>删除账号</a>
+						<a>注册账号</a>
+					</p>-->
+					<button>登陆</button>
+				</form>
+			</asid>
+		</div>
+		<!--点击更改管理员信息-->
+		<div class="control_mask">
+			<div class="control_message">
+				
+				<div class="leftbar">
+					<i id="controlClose" class="icon-cross"></i>
+					<div class="tx">
+						<i class="icon-user"></i>
+					</div>
+					<input type="file" id="file_tx"/>
+					<button id="submit_tx">提交头像</button>
+					<span>* 点击图片添加头像</span>
+				</div>
+				<!--<div class="rightbar">
+					<p>名字：<input type="text" id="uname"/></p>
+					<p>性别：
+						<input type="radio" name="sex" class="sex"/><i>男</i>
+						<input type="radio" name="sex" class="sex"/><i>女</i>
+					</p>
+					<p>工号：<input type="text" id="uname"/></p>
+					
+				</div>-->
+			</div>
+		</div>
+	</body>
+</html>
